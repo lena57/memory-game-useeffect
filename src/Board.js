@@ -3,11 +3,11 @@ import Square from "./Square";
 
 const boardStyle = {
   border: "4px solid green",
-  width: "400px",
-  height: "300px",
+  width: "500px",
+  height: "400px",
   display: "grid",
-  gridTemplateRows: "1fr 1fr 1fr",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr",
+  gridTemplateRows: "1fr 1fr 1fr 1fr",
+  gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
   margin: "0 auto" //at page's center
 }
 

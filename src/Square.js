@@ -8,7 +8,7 @@ const squareStyle = {
   marginBottom: "-1px",
   padding: "0px",
   fontWeight: "800",
-  fontsize: "12em",
+  fontSize: "4em",
   cursor: "pointer",
   justifyContent: "center",
   alignItems: "center",
