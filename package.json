@@ -18,6 +18,8 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+      "rules": {
+        "@typescript-eslint/no-redeclare": "off"},
     "extends": [
       "react-app",
       "react-app/jest"
