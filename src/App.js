@@ -29,7 +29,7 @@ function App() {
 
   useEffect(() => {
     emojiFun()
-  }, [])
+  })
 
   const openCard = (id, img) => {
     const newBoard = board.map((el) => el.id === id ? {...el, isOpen: true} : el)
@@ -52,7 +52,7 @@ function App() {
     setTimeout(() => {
       checkMove()
     }, 500)
-  }, [history])
+  }, [history, checkMove])
 
   const calculateWinner = () => {
     const win = board.every(el => el.isOpen === true)
@@ -66,7 +66,7 @@ function App() {
     if (history.length % 2 === 0) {
       calculateWinner()
     }
-  }, [history])
+  }, [history, calculateWinner])
 
   const restart = () => {
     emojiFun()
@@ -78,7 +78,7 @@ function App() {
     setTimeout(() => {
       restart()
     }, 5000)
-  }, [resultArr])
+  }, [resultArr, restart])
 
   return (
     <div className="App">
