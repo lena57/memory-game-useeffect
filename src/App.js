@@ -47,6 +47,7 @@ function App() {
       setBoard(newBoard)
     }
   }
+  // eslint-disable-next-line
 
   useEffect(() => {
     setTimeout(() => {
